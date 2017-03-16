@@ -1,0 +1,146 @@
+<!doctype html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="description" content="Hbook,致力于前端开发推广">
+	<meta name="keywords" content="前端,前端开发,前端框架,css,html,js,jquery,ui,设计,hbook">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Action for mobile</title>
+	<link rel="Shortcut Icon" href="docs/images/hbook.ico">
+	<link rel="stylesheet" href="docs/css/hbook-template.css">
+	<link rel="stylesheet" href="dist/css/m-action.min.css">
+ </head>
+ <body >
+
+	<div style="display: none;">
+		<img src="docs/images/hbook.jpg" alt="简洁、直观的前端UI框架－Hbook">
+	</div>
+	
+	<!-- template-header begin -->
+	<div class="template-header" >
+		<h2 class="template-header-tit">Action</h2>
+		<p class="template-header-sum">移动端操作列表</p>
+		<div class="btn-group">
+			<a href="https://github.com/hwgq2005/m-action" class="btn btn-large btn-primary download">Action(v0.0.1)</a>
+			<a href="#start" class="btn btn-large btn-primary download">开始使用</a>
+		</div>
+	</div>
+	<!-- template-header end -->
+
+	<!-- template-content begin -->
+	<div class="template-content w-768" id="start">
+		<div class="template-module">
+			<h1 class="template-module-tit">Get Start</h1>
+<pre class="prettyprint linenums">
+ &lt;!--  核心 CSS 文件  -->
+ &lt;link rel="stylesheet" href="https://unpkg.com/m-action/dist/css/m-action.min.css">
+
+ &lt;!--  核心 JS 文件  -->
+ &lt;script src="https://unpkg.com/m-action/dist/js/m-action.min.js"></script>
+</pre>
+		</div>
+
+		<div class="template-module">
+			<h1 class="template-module-tit">Demo</h1>
+			<div class="docs-example" style="text-align: center;">
+				<a href="javascript:;" class="btn btn-primary btn-large" id="modal-one">操作列表一</a>
+				<a href="javascript:;" class="btn btn-primary btn-large" id="modal-two">操作列表二</a>
+			</div>
+		</div>
+
+		<div class="template-module">
+			<h1 class="template-module-tit">Usage</h1>
+<pre class="prettyprint linenums">
+调用方式：
+var action = Action({
+	id:'action',
+	summary:'这是一段短文',
+	actions:[{
+		name:'确定',
+		callback:function(){
+
+		}
+	},{
+		name:'返回上一步',
+		callback:function(){
+			
+		}
+	}],
+	complete:function(){
+		// do something ...				
+	},
+
+	cancel:function(){
+		// do something ...
+	}
+})
+</pre>
+			<div class="margin-20">
+				<table class="table table-bordered table-zebra">
+		            <thead>
+		              <tr>
+		                <th>属性</th>
+		                <th>备注说明</th>
+		              </tr>
+		            </thead>
+		            <tbody>
+		              <tr>
+		                <td><code>id</code></td>
+		                <td>string，例如："action"</td>
+		              </tr>
+		              <tr>
+		                <td><code>summary</code></td>
+		                <td>string，描述</td>
+		              </tr>
+		               <tr>
+		                <td><code>actions</code></td>
+		                <td>array，数组值是个对象，内含name和callback</td>
+		              </tr>
+		              <tr>
+		                <td><code>backdrop</code></td>
+		                <td>boolean值，true或者false</td>
+		              </tr>
+		              <tr>
+		                <td><code>cancelButton</code></td>
+		                <td>boolean值，true或者false</td>
+		              </tr>
+		             
+		              <tr>
+		                <td><code>cancelText</code></td>
+		                <td>string，取消按钮名称</td>
+		              </tr>
+		              <tr>
+		                <td><code>complete</code></td>
+		                <td>function(){}，打开弹框后回调</td>
+		              </tr>
+		             
+		              <tr>
+		                <td><code>cancel</code></td>
+		                <td>function(){}，取消事件回调</td>
+		              </tr>
+		            </tbody>
+		          </table>  
+			</div>
+		</div>
+	</div>	
+
+	<!-- template-content end -->
+
+	<!-- template-footer begin -->
+	<footer class="template-footer w-768">
+		<div class="template-footer-content">
+			<p>© Hbook 2016-2017 All right reserved By <a href="http://www.weibo.com/hwgq2005" target="_blank" title="微博">@hwgq2005</a> </p>
+			<p>Email：<a href="mailto:hbook@bookcss.com" title="邮箱">hbook@bookcss.com</a></p>
+		</div>
+	</footer>
+	<!-- template-footer end -->
+
+    <script src="docs/js/lib/prettify.js"></script>
+    <script src="dist/js/m-action.min.js"></script>
+    <script src="docs/js/main.min.js"></script>
+ </body>
+
+</html>

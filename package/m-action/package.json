@@ -1,0 +1,28 @@
+{
+  "name": "m-action",
+  "version": "0.0.6",
+  "main": "index.js",
+  "author": "hwgq2005",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwgq2005/m-action.git"
+  },
+  "keywords": [
+    "bookcss",
+    "hbook",
+    "css",
+    "js",
+    "ui"
+  ],
+  "description": "Modal for mobile",
+  "bugs": {
+    "url": "https://github.com/hwgq2005/m-action/issues"
+  },
+  "homepage": "https://github.com/hwgq2005/m-action#readme",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
+

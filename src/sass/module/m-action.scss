@@ -1,0 +1,70 @@
+/*====== action ========*/
+@import "../config";
+
+html {
+  font-size: 62.5%;
+}
+.action-open {
+  // overflow-y: hidden;
+}
+.action {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  color: #666;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  @include transition(all .2s linear);
+  @include transform(translateY(100%));
+  &.in {
+    @include transform(translateY(0));
+  }
+  .action-menu {
+    position: relative;
+    text-align: center;
+    color: #999;
+    line-height: 22px;
+    font-size: 1.8rem;
+    background: #f7f7f7;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-all;
+    .action-summary {
+      padding: 18px 16px;
+      color: #999;
+      background: #fff;
+      font-size: 1.2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    ul {
+      margin-bottom: .8rem;
+      background: #fff;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      li {
+        padding: 12px 16px;
+        color: #333;
+        font-size: 1.4rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+.action-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+  opacity: 0;
+  @include transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
